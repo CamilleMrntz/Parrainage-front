@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Formulaire</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
 </head>
+
+<header>
+    <img class="logo" src="assets/logo-hetic.png" alt="logo Hetic">
+    <h1 class="name">TROUVE TON PARRAIN</h1>
+</header>
+
 <body>
+    <main class="wrapper">
 
-<h2>Formulaire d'inscription</h2>
-<p>Bienvenue sur l'outil qui va vous permettre de trouver votre parrain. Vous allez rentrer vos informations et une fois cela rempli, vous choisirez la formation dans laquelle vous allez entrer cette année. Une liste de phrases apparaitra ensuite.</p> 
-<p>Il vous faudra selectionner la phrase dans la liste qui vous plait le plus. Chaque phrase correspond à un parrain, alors faites le bon choix 😉</p>
+        <section class="description">
+            <h2>Formulaire d'inscription</h2>
+            <p>Bienvenue sur l'outil qui va te permettre de trouver ton parrain. Tu vas devoir rentrer tes informations
+                et
+                une fois le formulaire rempli, tu choisiras la formation dans laquelle tu vas entrer cette année. Une liste
+                de
+                phrases apparaitra ensuite.</p>
+            <p>Il te faudra selectionner la phrase dans la liste qui te plait le plus. Chaque phrase correspond à un
+                parrain, alors fais le bon choix 😉</p>
+        </section>
 
-<div class="container">
-  <form action="/action_page.php">
-  <div class="row">
-    <div class="col-25">
-      <label for="lastname">Nom :</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="lastname" name="lastname" placeholder="Votre nom...">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="firstname">Prénom :</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="firstname" name="firstname" placeholder="Votre prénom...">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="mail">E-mail Hetic :</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="mail" name="mail" placeholder="Adresse e-mail Hetic...">
-    </div>
-  </div>
-  <br><hr>
-  <div class="row">
-    <div class="col-25">
-      <label for="formation">Formation pour l'année à venir :</label>
-    </div>
-    <div class="col-75">
-      <select id="formation" class="formation" name="formation">
-        <option value="grande_ecole">Programme grande école</option>
-        <option value="bachelor_webmarketing">Bachelor webmarketing & UX</option>
-        <option value="bachelor_dev_web">Bachelor développeur web</option>
-        <option value="bachelor_data">Bachelor data & IA</option>
-        <option value="bachelor_3d">Bachelor infographie 3D</option>
-        <option value="pmd">PMD</option>
-        <option value="mastere_product">mastere 1 product management</option>
-        <option value="mastere_marketing">mastere 1 marketing</option>
-        <option value="mastere_cto">mastere 1 CTO & tech lead</option>
-        <option value="mastere_data">mastere 1 data & IA</option>
-      </select>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="avatar">Avatar :</label>
-    </div>
-    <div class="col-75">
-      <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
-</div>
+        <section id="formulaire" class="formulaire">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lastname">Nom :</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lastname" name="lastname" placeholder="Votre nom...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="firstname">Prénom :</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="firstname" name="firstname" placeholder="Votre prénom...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="mail">E-mail Hetic :</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="mail" name="mail" placeholder="Adresse e-mail Hetic...">
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="formation">Formation pour l'année à venir :</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="formation" class="formation" name="formation">
+                            <option value="grande_ecole">Programme grande école</option>
+                            <option value="bachelor_webmarketing">Bachelor webmarketing & UX</option>
+                            <option value="bachelor_dev_web">Bachelor développeur web</option>
+                            <option value="bachelor_data">Bachelor data & IA</option>
+                            <option value="bachelor_3d">Bachelor infographie 3D</option>
+                            <option value="pmd">PMD</option>
+                            <option value="mastere_product">mastere 1 product management</option>
+                            <option value="mastere_marketing">mastere 1 marketing</option>
+                            <option value="mastere_cto">mastere 1 CTO & tech lead</option>
+                            <option value="mastere_data">mastere 1 data & IA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="avatar">Avatar :</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                    </div>
+                </div>
 
+                <br>
+                <hr>
+                <section class="pick">
+                    <h3>Choisis ta phrase préférée 😇</h3>
+                    <p class="quote">1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">2 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">3 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">4 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">5 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">6 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">7 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">8 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">9 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">10 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <div id="submit_contener">
+                        <div id="quote_contener"></div>
+                        <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        <div id="button" class="arrow"></div>
+    </main>
 </body>
+<script src="app.js"></script>
+
 </html>
