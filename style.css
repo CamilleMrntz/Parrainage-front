@@ -69,6 +69,7 @@
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    margin-bottom: 50px;
   }
   
   .col-25 {
@@ -83,6 +84,11 @@
     margin-top: 6px;
   }
   
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -94,6 +100,7 @@
     margin: 15px;
   }
 
+  /* Section contenant les phrases */
   .pick {
     display: flex;
     flex-direction: column;
@@ -103,6 +110,7 @@
   .pick p {
     font-weight: 400;
     padding: 10px;
+    text-align: center;
   }
 
   .pick p:hover {
@@ -110,22 +118,21 @@
   }
 
   .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
-    background: #04aa6d7c;
+    background: #04AA6D;
     border-radius: 5px;
     position: fixed;
-    bottom: 60px;
+    bottom: 75px;
     right: 10px;
   }
 
   .arrow:active {
-    background: red;
+    background: rgba(0, 42, 255, 0.509);
   }
-
-  /* .validation_contener {
-    /* width: 100vw; */
-
 
   #submit_contener {
     display: none;
@@ -164,11 +171,3 @@
       justify-content: space-around;
     }
   }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  /* @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  } */
