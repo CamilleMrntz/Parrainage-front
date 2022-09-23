@@ -117,6 +117,7 @@
     cursor: pointer;
   }
 
+  /* Arrow to slide on top of the page */
   .arrow {
     display: flex;
     justify-content: center;
@@ -134,6 +135,7 @@
     background: rgba(0, 42, 255, 0.509);
   }
 
+  /* This contener is linked to js. It will appear once a quote is selected by the user */
   #submit_contener {
     display: none;
     justify-content: space-between;
