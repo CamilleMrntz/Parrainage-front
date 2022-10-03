@@ -9,84 +9,56 @@
     <title>Formulaire</title>
 </head>
 
-<header>
-    <img class="logo" src="assets/logo-hetic.png" alt="logo Hetic">
+<!-- <header>
+    <img class="logo" src="assets/img/logo-hetic.png" alt="logo Hetic">
     <h1 class="name">TROUVE TON PARRAIN</h1>
-</header>
+</header> -->
 
 <body>
     <main class="wrapper">
 
         <section class="description">
-            <h2>Formulaire d'inscription</h2>
-            <p>Bienvenue sur l'outil qui va te permettre de trouver ton parrain. Tu vas devoir rentrer tes informations
-                et
-                une fois le formulaire rempli, tu choisiras la formation dans laquelle tu vas entrer cette année. Une liste
-                de
-                phrases apparaitra ensuite.</p>
-            <p>Il te faudra selectionner la phrase dans la liste qui te plait le plus. Chaque phrase correspond à un
-                parrain, alors fais le bon choix 😉</p>
+            <h1>Formulaire de parrainage</h1>
+            <p>Hello 👨‍🚀</p>
+            <p>Bienvenue sur ce petit formulaire servant à choisir ton parrain ou ta marraine.
+                Pour rappel, un parrain ou une marraine de promo te servira à t’intégrer au sein de l’école, te
+                transmettre ses connaissances techniques mais aussi te mettre en relation avec son réseau professionnel
+                pour t’aider à trouver un stage ou une alternance. Alors choisis ton parrain maintenant ! 🚀</p>
         </section>
 
         <section id="formulaire" class="formulaire">
             <form action="/action_page.php">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lastname">Nom :</label>
-                    </div>
-                    <div class="col-75">
+                <div class="fullname">
+                    <div class="row">
+                        <label for="lastname">Nom</label>
                         <input type="text" id="lastname" name="lastname" placeholder="Votre nom...">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="firstname">Prénom :</label>
-                    </div>
-                    <div class="col-75">
+                    <div class="row">
+                        <label for="firstname">Prénom</label>
                         <input type="text" id="firstname" name="firstname" placeholder="Votre prénom...">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-25">
-                        <label for="mail">E-mail Hetic :</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="mail" name="mail" placeholder="Adresse e-mail Hetic...">
-                    </div>
-                </div>
-                <br>
-                <hr>
-                <br>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="formation">Formation :</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="training" class="formation" name="training">
-                            <option value="grande_ecole">Programme grande école</option>
-                            <option value="bachelor_webmarketing">Bachelor webmarketing & UX</option>
-                            <option value="bachelor_dev_web">Bachelor développeur web</option>
-                            <option value="bachelor_data">Bachelor data & IA</option>
-                            <option value="bachelor_3d">Bachelor infographie 3D</option>
-                            <option value="pmd">PMD</option>
-                            <option value="mastere_product">mastere 1 product management</option>
-                            <option value="mastere_marketing">mastere 1 marketing</option>
-                            <option value="mastere_cto">mastere 1 CTO & tech lead</option>
-                            <option value="mastere_data">mastere 1 data & IA</option>
-                        </select>
-                    </div>
+                    <label for="mail">Adresse mail HETIC</label>
+                    <input type="text" id="mail" name="mail" placeholder="Adresse mail Hetic...">
                 </div>
                 <div class="row">
-                    <div class="col-25">
-                        <label for="avatar">Avatar :</label>
-                    </div>
-                    <!-- <div class="col-75">
-                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
-                    </div> -->
+                    <label for="formation">Filière</label>
+                    <select id="training" class="formation" name="training">
+                        <option value="default">-- Selectionne ta filière --</option>
+                        <option value="grande_ecole">Programme grande école</option>
+                        <option value="bachelor_webmarketing">Bachelor webmarketing & UX</option>
+                        <option value="bachelor_dev_web">Bachelor développeur web</option>
+                        <option value="bachelor_data">Bachelor data & IA</option>
+                        <option value="bachelor_3d">Bachelor infographie 3D</option>
+                        <option value="pmd">PMD</option>
+                        <option value="mastere_product">mastere 1 product management</option>
+                        <option value="mastere_marketing">mastere 1 marketing</option>
+                        <option value="mastere_cto">mastere 1 CTO & tech lead</option>
+                        <option value="mastere_data">mastere 1 data & IA</option>
+                    </select>
                 </div>
 
-                <br>
-                <hr>
                 <section class="pick">
                     <h3>Choisis ta phrase préférée 😇</h3>
                     <p class="quote">1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -98,19 +70,18 @@
                     <p class="quote">7 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <p class="quote">8 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <p class="quote">9 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="quote">10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="quote">10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit.</p>
                 </section>
-                <br>
-                <hr>
-                <br>
+
                 <div id="submit_contener">
-                        <div id="quote_contener"></div>
-                        <input type="submit" value="Submit">
+                    <div id="quote_contener"></div>
+                    <input type="submit" value="Choisir ce parrain">
                 </div>
             </form>
         </section>
         <div id="button" class="arrow">
-            <img src="./assets/arrow.png" alt="arrow to slide on top of the page">
+            <img src="./assets/img/arrow.png" alt="arrow to slide on top of the page">
         </div>
     </main>
 </body>
