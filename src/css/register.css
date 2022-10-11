@@ -16,6 +16,16 @@
   --inputBorderColor: lightgray;
 }
 
+@font-face {
+  font-family: "Good_Times";
+  src: url("../assets/font/good_times/good\ times\ rg.otf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/font/montserrat.regular.ttf");
+}
+
 body {
   display: flex;
   align-items: center;
@@ -24,6 +34,11 @@ body {
   overflow-x: hidden;
   background: #333;
 }
+h1 {
+  font-family: Good_Times;
+  padding-bottom: 50px;
+}
+
 ::selection {
   color: #fff;
   background: var(--primary);
@@ -49,11 +64,23 @@ body {
   width: calc(100% * var(--stepNumber));
   /* margin-left: -5px; */
 }
+
+.form-outer {
+  width: 100vw;
+}
+
+.page {
+  width: 90vw;
+}
+
+.slide-page {
+  width: 100vw;
+}
 .form-outer form .page {
   height: 100vh;
   width: calc(100% / var(--stepNumber));
   transition: margin-left 0.3s ease-in-out;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   padding: 10px;
 }
 .form-outer form .page .title {
@@ -85,8 +112,8 @@ form .page .field input {
   transition: border-color 150ms ease;
 }
 
-form .page .field .section {
-  /*display: flex;
+/* form .page .field .section {
+  display: flex;
   flex-flow: column;
   box-sizing: border-box;
   height: 100%;
@@ -96,8 +123,8 @@ form .page .field .section {
   padding-left: 15px;
   margin: 0 1px;
   font-size: 18px;
-  transition: border-color 150ms ease; */
-}
+  transition: border-color 150ms ease;
+} */
 
 form .page .field input.invalid-input {
   border-color: var(--errorColor);
@@ -264,6 +291,7 @@ form .page .btns button.next {
   color: #fff;
 }
 
+
 @media screen and (max-width: 660px) {
   :root {
     --containerWidth: 400px;
@@ -404,7 +432,9 @@ input:hover {
   color: black;
 }
 
-/* @media screen and (max-width: 1150px) {
+
+/* 
+@media screen and (max-width: 1150px) {
   tr td:nth-child(3),
   tr th:nth-child(3),
   tr td:nth-child(5),

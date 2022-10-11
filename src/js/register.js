@@ -33,7 +33,7 @@ function initMultiStepForm() {
       // inputsValid = true;
 
       if (inputsValid) {
-        slidePage.style.marginLeft = `-${(100 / stepsNumber) * current}%`;
+        slidePage.style.marginLeft = `-${(105 / stepsNumber) * current}%`;
         bullet[current - 1].classList.add("active");
         progressCheck[current - 1].classList.add("active");
         progressText[current - 1].classList.add("active");
@@ -45,7 +45,7 @@ function initMultiStepForm() {
   for (let i = 0; i < prevButtons.length; i++) {
     prevButtons[i].addEventListener("click", function (event) {
       event.preventDefault();
-      slidePage.style.marginLeft = `-${(100 / stepsNumber) * (current - 2)}%`;
+      slidePage.style.marginLeft = `-${(105 / stepsNumber) * (current - 2)}%`;
       bullet[current - 2].classList.remove("active");
       progressCheck[current - 2].classList.remove("active");
       progressText[current - 2].classList.remove("active");
