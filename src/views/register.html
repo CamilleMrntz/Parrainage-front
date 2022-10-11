@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multistep form</title>
+  <link rel="stylesheet" href="../css/register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+  <div class="container">
+    <header>Formulaire d'information</header>
+    <div class="progress-bar">
+
+      <div class="step">
+        <p>Informations</p>
+        <div class="bullet">
+          <span>1</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+
+      <div class="step">
+        <p>Filière</p>
+        <div class="bullet">
+          <span>2</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+
+      <div class="step">
+        <p>Êtes vous?</p>
+        <div class="bullet">
+          <span>3</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+
+      <div class="step">
+        <p>Récapitulatif</p>
+        <div class="bullet">
+          <span>4</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+
+    </div>
+    <div class="form-outer">
+      <form action="#">
+
+        <div class="page slide-page">
+          <div class="title">Informations:</div>
+          <div class="field">
+            <div class="label"> Nom </div>
+            <input type="text" required />
+          </div>
+          <div class="field">
+            <div class="label"> Prénom </div>
+            <input type="text" required />
+          </div>
+          <div class="field">
+            <div class="label"> ID discord </div>
+            <input type="text" required />
+          </div>
+          <div class="field">
+            <button class="firstNext next">Next</button>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="field">
+            <div class="label">-- Filière --</div>
+            <select id="training" class="formation" name="training" required>
+              <option value="default">-- Selectionne ta filière --</option>
+              <option value="grande_ecole">Programme grande école</option>
+              <option value="bachelor_webmarketing">Bachelor webmarketing & UX</option>
+              <option value="bachelor_dev_web">Bachelor développeur web</option>
+              <option value="bachelor_data">Bachelor data & IA</option>
+              <option value="bachelor_3d">Bachelor infographie 3D</option>
+              <option value="pmd">PMD</option>
+              <option value="mastere_product">mastere 1 product management</option>
+              <option value="mastere_marketing">mastere 1 marketing</option>
+              <option value="mastere_cto">mastere 1 CTO & tech lead</option>
+              <option value="mastere_data">mastere 1 data & IA</option>
+            </select>
+          </div>
+          <div class="field btns">
+            <button class="prev-4 prev">Previous</button>
+            <button class="next-4 next">Next</button>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="title">Choisir</div>
+          <div class="field">
+            <input class="radio-input" id="male" type="radio" name="godson" value="Parrain" checked>
+            <label class="radio-label" for="male">Parrain</label>
+            <input class="radio-input" id="female" type="radio" name="godson" value="Filleul">
+            <label class="radio-label" for="female">Filleul</label>
+          </div>
+          <div class="field btns">
+            <button class="prev-1 prev">Previous</button>
+            <button class="next-1 next">Next</button>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="field">
+            <table>
+              <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+              </tr>
+              <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+              </tr>
+            </table>
+          </div>
+          <div class="field btns">
+            <button class="prev-5 prev">Previous</button>
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+
+        <!-- <div class="page">
+          <div class="title">Login Details:</div>
+          <div class="field">
+            <div class="label">Username</div>
+            <input type="text" required />
+          </div>
+          <div class="field">
+            <div class="label">Password</div>
+            <input type="password" required />
+          </div>
+          <div class="field btns">
+            <button class="prev-5 prev">Previous</button>
+            <button class="submit">Submit</button>
+          </div>
+        </div> -->
+
+      </form>
+    </div>
+  </div>
+  <script src="../js/register.js"></script>
+</body>
+
+</html>
