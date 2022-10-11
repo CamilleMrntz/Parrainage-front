@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Good_Times";
+  src: url("../assets/font/good_times/good\ times\ rg.otf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/font/montserrat.regular.ttf");
+}
+
+html {
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
 .wrapper {
   display: flex;
   flex-flow: column wrap;
@@ -19,14 +34,14 @@ input {
 input[type="submit"] {
   background-color: #04aa6d;
   color: white;
+  font-size: 16px;
+  /* width: 80px; */
 }
 
 /* Style the container for inputs */
 .container {
   background-color: #f1f1f1;
   padding: 20px;
-  width: 800px;
-  margin-bottom: 20px;
 }
 
 .logo img {
